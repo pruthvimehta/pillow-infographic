@@ -61,10 +61,9 @@ Close and reopen Claude Code — the skill will be automatically detected and re
 
 ```
 pillow-infographic/
-├── pillow-infographic/
-│   ├── SKILL.md               # Skill instructions for Claude
-│   └── scripts/
-│       └── generate_image.py  # Python script that calls Gemini API
+├── SKILL.md               # Skill instructions for Claude
+├── scripts/
+│   └── generate_image.py  # Python script that calls Gemini API
 └── README.md
 ```
 
