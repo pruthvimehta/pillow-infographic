@@ -54,23 +54,30 @@ Optimizes any content for **SEO** (Search Engine Optimization), **AEO** (Answer 
 
 ## How to Install a Skill
 
-1. **Download** the skill folder from this repository
-2. **Place it** inside your Claude skills directory:
-   ```
-   ~/.claude/skills/<skill-name>/
-   ```
-3. **Restart Claude Code** — the skill will be automatically detected and available
+### Step 1 — Download the Repository
 
-### Example
+1. Go to [github.com/pruthvimehta/Claude-skills-](https://github.com/pruthvimehta/Claude-skills-)
+2. Click the green **`< > Code`** button
+3. Click **`Download ZIP`**
+4. Once downloaded, **unzip** the file — you'll get a folder called `Claude-skills--main`
 
+### Step 2 — Copy the Skill to Claude
+
+Open your **Terminal** and run the command for the skill you want:
+
+**For `pillow-infographic`:**
 ```bash
-# Clone this repository
-git clone git@github.com:pruthvimehta/Claude-skills-.git
-
-# Copy a skill to your Claude skills directory
-cp -r Claude-skills-/seo-aeo-geo ~/.claude/skills/seo-aeo-geo
-cp -r Claude-skills-/pillow-infographic ~/.claude/skills/pillow-infographic
+cp -r ~/Downloads/Claude-skills--main/pillow-infographic ~/.claude/skills/pillow-infographic
 ```
+
+**For `seo-aeo-geo`:**
+```bash
+cp -r ~/Downloads/Claude-skills--main/seo-aeo-geo ~/.claude/skills/seo-aeo-geo
+```
+
+### Step 3 — Restart Claude Code
+
+Close and reopen Claude Code — the skill will be automatically detected and ready to use.
 
 ---
 
