@@ -41,7 +41,7 @@ Just talk to Claude naturally:
 Open your **Terminal** and run:
 
 ```bash
-cp -r ~/Downloads/pillow-infographic-main/pillow-infographic ~/.claude/skills/pillow-infographic
+cp -r ~/Downloads/pillow-infographic-main ~/.claude/skills/pillow-infographic
 ```
 
 ### Step 3 — Restart Claude Code
