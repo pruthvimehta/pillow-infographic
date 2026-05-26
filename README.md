@@ -66,4 +66,10 @@ pillow-infographic/
 
 ---
 
-Built by [Pruthvi Mehta](https://github.com/pruthvimehta)
+---
+
+## Connect with Pruthvi
+
+- Instagram: [instagram.com/ca.pruthvimehta](https://instagram.com/ca.pruthvimehta)
+- LinkedIn: [linkedin.com/in/pruthvimehta](https://linkedin.com/in/pruthvimehta)
+- YouTube: [youtube.com/@ca.pruthvimehta](https://youtube.com/@ca.pruthvimehta)

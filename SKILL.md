@@ -4,7 +4,7 @@ description: Generate a professional downloadable infographic PNG entirely local
 ---
 
 > **Skill by [Pruthvi Mehta](https://www.linkedin.com/in/pruthvimehta/)** — CA & Content Creator
-> Instagram: [@ca.pruthvimehta](https://www.instagram.com/ca.pruthvimehta/) | LinkedIn: [pruthvimehta](https://www.linkedin.com/in/pruthvimehta/)
+> Instagram: [@ca.pruthvimehta](https://www.instagram.com/ca.pruthvimehta/) | LinkedIn: [pruthvimehta](https://www.linkedin.com/in/pruthvimehta/) | YouTube: [@ca.pruthvimehta](https://www.youtube.com/@ca.pruthvimehta)
 
 ---
 # Pillow Infographic Generator
