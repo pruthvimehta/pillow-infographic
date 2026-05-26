@@ -1,17 +1,14 @@
 # Pillow Infographic — Claude Skill
 
-A custom Claude Code skill by **Pruthvi Mehta** that generates visually rich **1080x1350px infographic images** from any topic or block of text using Google's Gemini Imagen API.
+A custom Claude Code skill by **Pruthvi Mehta** that generates beautiful, downloadable **infographic PNG images** using Python Pillow — works entirely **offline**, no API key needed, no internet required.
 
 ---
 
 ## What This Skill Does
 
-You give Claude a topic or paste any text — it turns it into a beautiful, shareable infographic image. No design tool needed.
+You give Claude a topic or paste any text — it turns it into a clean, branded infographic PNG at **1080px wide**. Everything runs locally on your machine.
 
-It supports 3 visual styles:
-- 🟡 **Professional** — Clean white background with coral accents. LinkedIn-ready.
-- 🌑 **Bold & Dark** — Deep navy with gold accents. Premium, high-contrast look.
-- ✏️ **Sketch / Cartoon** — Hand-drawn doodle style. Great for Instagram.
+No Gemini. No API key. No internet connection needed.
 
 ---
 
@@ -19,11 +16,12 @@ It supports 3 visual styles:
 
 Just talk to Claude naturally:
 
-- `/generate-infographic 5 money habits`
+- `/pillow-infographic 5 money habits`
 - "Generate an infographic about financial planning"
-- "Make this visual" *(paste any text)*
+- "Make an infographic as a PNG"
+- "Create a downloadable infographic"
+- "I want a shareable image for LinkedIn"
 - "Turn this into an infographic"
-- "Create a visual summary of this"
 
 ---
 
@@ -52,8 +50,13 @@ Close and reopen Claude Code — the skill will be automatically detected and re
 
 ## Requirements
 
-- **Google Gemini API key** — stored inside `scripts/generate_image.py`
 - **Python 3** — must be installed on your machine
+- **Pillow library** — install it by running:
+  ```bash
+  pip3 install pillow
+  ```
+- No API key needed
+- No internet connection needed
 
 ---
 
@@ -61,9 +64,9 @@ Close and reopen Claude Code — the skill will be automatically detected and re
 
 ```
 pillow-infographic/
-├── SKILL.md               # Skill instructions for Claude
+├── SKILL.md          # Skill instructions for Claude
 ├── scripts/
-│   └── generate_image.py  # Python script that calls Gemini API
+│   └── generate.py   # Python script that generates the infographic
 └── README.md
 ```
 
@@ -72,10 +75,9 @@ pillow-infographic/
 ## How It Works
 
 1. Claude reads your topic or text input
-2. Asks you to pick a visual style
-3. Builds a detailed image prompt
-4. Runs `generate_image.py` to call the Gemini API
-5. Displays the generated infographic directly in the chat
+2. Generates or structures the content points
+3. Runs `generate.py` using Python Pillow to create the PNG
+4. Saves and displays the infographic directly in the chat
 
 ---
 
