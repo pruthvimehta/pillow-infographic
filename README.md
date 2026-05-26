@@ -27,9 +27,9 @@ Just talk to Claude naturally:
 
 ## How to Install
 
-1. Click **`<> Code`** → **`Download ZIP`** → unzip the folder
+1. Click **`<> Code`** → **`Download ZIP`**
 2. Go to **[claude.ai](https://claude.ai)** → **Skills** → **Create Skill**
-3. Upload **`SKILL.md`** from the unzipped folder → **Save**
+3. Upload the **ZIP file** directly → **Save**
 
 ---
 
