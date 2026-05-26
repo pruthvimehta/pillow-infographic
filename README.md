@@ -27,24 +27,9 @@ Just talk to Claude naturally:
 
 ## How to Install
 
-### Step 1 — Download
-
-1. Go to [github.com/pruthvimehta/pillow-infographic](https://github.com/pruthvimehta/pillow-infographic)
-2. Click the green **`< > Code`** button
-3. Click **`Download ZIP`**
-4. Unzip the downloaded file — you'll get a folder called `pillow-infographic-main`
-
-### Step 2 — Copy to Claude
-
-Open your **Terminal** and run:
-
-```bash
-cp -r ~/Downloads/pillow-infographic-main ~/.claude/skills/pillow-infographic
-```
-
-### Step 3 — Restart Claude Code
-
-Close and reopen Claude Code — the skill will be automatically detected and ready to use.
+1. Click **`<> Code`** → **`Download ZIP`** → unzip the folder
+2. Go to **[claude.ai](https://claude.ai)** → **Skills** → **Create Skill**
+3. Upload **`SKILL.md`** from the unzipped folder → **Save**
 
 ---
 
