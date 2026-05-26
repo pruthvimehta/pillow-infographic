@@ -1,78 +1,47 @@
-# Claude Skills Repository
+# Pillow Infographic — Claude Skill
 
-A personal collection of custom Claude Code skills built by **Pruthvi Mehta**.
-
----
-
-## What is a Skill?
-
-A **skill** is a set of instructions that teaches Claude how to perform a specific task — like generating an infographic or optimizing content for search engines. Once installed, you can trigger a skill by typing a command or describing what you want.
+A custom Claude Code skill by **Pruthvi Mehta** that generates visually rich **1080x1350px infographic images** from any topic or block of text using Google's Gemini Imagen API.
 
 ---
 
-## Skills in this Repository
+## What This Skill Does
 
-### 1. `pillow-infographic`
-Generates a visually rich **1080x1350px infographic image** from any topic or block of text using Google's Gemini Imagen API.
+You give Claude a topic or paste any text — it turns it into a beautiful, shareable infographic image. No design tool needed.
 
-**How to trigger:**
-- Type `/generate-infographic <your topic>`
-- Say "generate an infographic about X"
-- Say "make this visual" or "turn this into an infographic"
-- Paste a block of text and ask for a visual summary
-
-**What it does:**
-1. Extracts key points from your input
-2. Asks you to pick a visual style (Professional, Bold & Dark, or Sketch/Cartoon)
-3. Generates a high-quality infographic image
-4. Displays it inline in the chat
-
-**Requires:** Google Gemini API key (set inside the script)
+It supports 3 visual styles:
+- 🟡 **Professional** — Clean white background with coral accents. LinkedIn-ready.
+- 🌑 **Bold & Dark** — Deep navy with gold accents. Premium, high-contrast look.
+- ✏️ **Sketch / Cartoon** — Hand-drawn doodle style. Great for Instagram.
 
 ---
 
-### 2. `seo-aeo-geo`
-Optimizes any content for **SEO** (Search Engine Optimization), **AEO** (Answer Engine Optimization), and **GEO** (Generative Engine Optimization) — making your writing more discoverable, answerable, and AI-citable.
+## How to Trigger It
 
-**How to trigger:**
-- Say "optimize this for SEO"
-- Say "make this AEO-friendly" or "GEO optimize this"
-- Say "help this rank" or "make this AI-friendly"
-- Paste any draft and say "improve discoverability"
-- Ask "will this rank?" or "can AI find this?"
+Just talk to Claude naturally:
 
-**Works with:** LinkedIn posts, Instagram captions, articles, newsletters, reels, carousels, and more.
-
-**Output includes:**
-- Optimized version of your content
-- SEO / AEO / GEO breakdown
-- Content scorecard (scored out of 10)
-- Keywords and entities
-- Bonus upgrade suggestions
+- `/generate-infographic 5 money habits`
+- "Generate an infographic about financial planning"
+- "Make this visual" *(paste any text)*
+- "Turn this into an infographic"
+- "Create a visual summary of this"
 
 ---
 
-## How to Install a Skill
+## How to Install
 
-### Step 1 — Download the Repository
+### Step 1 — Download
 
-1. Go to [github.com/pruthvimehta/Claude-skills-](https://github.com/pruthvimehta/Claude-skills-)
+1. Go to [github.com/pruthvimehta/pillow-infographic](https://github.com/pruthvimehta/pillow-infographic)
 2. Click the green **`< > Code`** button
 3. Click **`Download ZIP`**
-4. Once downloaded, **unzip** the file — you'll get a folder called `Claude-skills--main`
+4. Unzip the downloaded file — you'll get a folder called `pillow-infographic-main`
 
-### Step 2 — Copy the Skill to Claude
+### Step 2 — Copy to Claude
 
-Open your **Terminal** and run the command for the skill you want:
+Open your **Terminal** and run:
 
-**For `pillow-infographic`:**
 ```bash
-cp -r ~/Downloads/Claude-skills--main/pillow-infographic ~/.claude/skills/pillow-infographic
-```
-
-**For `seo-aeo-geo`:**
-```bash
-cp -r ~/Downloads/Claude-skills--main/seo-aeo-geo ~/.claude/skills/seo-aeo-geo
+cp -r ~/Downloads/pillow-infographic-main/pillow-infographic ~/.claude/skills/pillow-infographic
 ```
 
 ### Step 3 — Restart Claude Code
@@ -81,44 +50,34 @@ Close and reopen Claude Code — the skill will be automatically detected and re
 
 ---
 
-## How to Use a Skill
+## Requirements
 
-Once installed, just talk to Claude naturally — skills are triggered automatically based on what you say.
-
-You can also use the explicit slash command format:
-```
-/seo-aeo-geo
-/generate-infographic
-```
+- **Google Gemini API key** — stored inside `scripts/generate_image.py`
+- **Python 3** — must be installed on your machine
 
 ---
 
 ## Repository Structure
 
 ```
-Claude-skills-/
+pillow-infographic/
 ├── pillow-infographic/
 │   ├── SKILL.md               # Skill instructions for Claude
 │   └── scripts/
-│       └── generate_image.py  # Python script for image generation
-├── seo-aeo-geo/
-│   └── SKILL.md               # Skill instructions for Claude
+│       └── generate_image.py  # Python script that calls Gemini API
 └── README.md
 ```
 
 ---
 
-## Adding More Skills
+## How It Works
 
-To contribute or add your own skill:
+1. Claude reads your topic or text input
+2. Asks you to pick a visual style
+3. Builds a detailed image prompt
+4. Runs `generate_image.py` to call the Gemini API
+5. Displays the generated infographic directly in the chat
 
-1. Create a folder with your skill name inside this repo
-2. Add a `SKILL.md` file with the skill instructions
-3. Add any supporting scripts in a `scripts/` subfolder
-4. Push to GitHub
+---
 
-```bash
-git add .
-git commit -m "Add <skill-name> skill"
-git push origin main
-```
+Built by [Pruthvi Mehta](https://github.com/pruthvimehta)
